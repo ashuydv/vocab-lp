@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Medical Equipment Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 font-sans">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm px-6 py-4 flex justify-between items-center">
+        <h1 class="text-xl font-semibold text-gray-800">
+            Medical Equipment Dashboard
+        </h1>
+        <div class="text-sm text-gray-500">
+            GSTIN: 27ABCDE1234F1Z5
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="p-6 space-y-6">
+
+        <!-- KPI Cards -->
+        <section class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+
+            <div class="bg-white rounded-lg shadow p-5">
+                <p class="text-sm text-gray-500">Total Revenue (This Month)</p>
+                <h2 class="text-2xl font-bold mt-2">₹4,85,200</h2>
+                <p class="text-green-600 text-sm mt-1">▲ 12% vs last month</p>
+            </div>
+
+            <div class="bg-white rounded-lg shadow p-5">
+                <p class="text-sm text-gray-500">Active Rentals</p>
+                <h2 class="text-2xl font-bold mt-2">28</h2>
+                <p class="text-blue-600 text-sm mt-1">Ventilators & Oxygen Units</p>
+            </div>
+
+            <div class="bg-white rounded-lg shadow p-5">
+                <p class="text-sm text-gray-500">GST Collected</p>
+                <h2 class="text-2xl font-bold mt-2">₹87,360</h2>
+                <p class="text-gray-400 text-sm mt-1">CGST + SGST + IGST</p>
+            </div>
+
+            <div class="bg-white rounded-lg shadow p-5">
+                <p class="text-sm text-gray-500">Overdue Rentals</p>
+                <h2 class="text-2xl font-bold mt-2 text-red-600">6</h2>
+                <p class="text-red-500 text-sm mt-1">Needs follow-up</p>
+            </div>
+
+        </section>
+
+        <!-- Inventory Overview -->
+        <section class="bg-white rounded-lg shadow p-6">
+            <h3 class="text-lg font-semibold mb-4">Inventory Overview</h3>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                <div class="bg-gray-50 p-4 rounded">
+                    <p class="text-sm text-gray-500">Available</p>
+                    <p class="text-xl font-bold">42</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded">
+                    <p class="text-sm text-gray-500">Rented</p>
+                    <p class="text-xl font-bold">28</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded">
+                    <p class="text-sm text-gray-500">Under Service</p>
+                    <p class="text-xl font-bold">5</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded">
+                    <p class="text-sm text-gray-500">Damaged</p>
+                    <p class="text-xl font-bold text-red-600">2</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent Invoices -->
+        <section class="bg-white rounded-lg shadow p-6">
+            <h3 class="text-lg font-semibold mb-4">Recent Invoices</h3>
+
+            <div class="overflow-x-auto">
+                <table class="min-w-full text-sm">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="px-4 py-2 text-left">Invoice No</th>
+                            <th class="px-4 py-2 text-left">Customer</th>
+                            <th class="px-4 py-2 text-left">Type</th>
+                            <th class="px-4 py-2 text-left">Amount</th>
+                            <th class="px-4 py-2 text-left">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y">
+                        <tr>
+                            <td class="px-4 py-2">INV-1023</td>
+                            <td class="px-4 py-2">City Care Hospital</td>
+                            <td class="px-4 py-2">Rental</td>
+                            <td class="px-4 py-2">₹24,780</td>
+                            <td class="px-4 py-2 text-green-600">Paid</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-2">INV-1022</td>
+                            <td class="px-4 py-2">Shree Clinic</td>
+                            <td class="px-4 py-2">Sale</td>
+                            <td class="px-4 py-2">₹89,500</td>
+                            <td class="px-4 py-2 text-yellow-600">Partial</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-2">INV-1021</td>
+                            <td class="px-4 py-2">Home Patient</td>
+                            <td class="px-4 py-2">Rental</td>
+                            <td class="px-4 py-2">₹12,390</td>
+                            <td class="px-4 py-2 text-red-600">Overdue</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Overdue Rentals -->
+        <section class="bg-white rounded-lg shadow p-6">
+            <h3 class="text-lg font-semibold mb-4">Overdue Rentals</h3>
+
+            <ul class="space-y-3">
+                <li class="flex justify-between items-center bg-red-50 p-4 rounded">
+                    <div>
+                        <p class="font-medium">Ventilator - SN: VNT-8821</p>
+                        <p class="text-sm text-gray-500">City Care Hospital</p>
+                    </div>
+                    <span class="text-red-600 font-semibold">₹8,000 Due</span>
+                </li>
+
+                <li class="flex justify-between items-center bg-red-50 p-4 rounded">
+                    <div>
+                        <p class="font-medium">Oxygen Concentrator - SN: OXY-3319</p>
+                        <p class="text-sm text-gray-500">Home Patient</p>
+                    </div>
+                    <span class="text-red-600 font-semibold">₹3,200 Due</span>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+</body>
+
+</html>

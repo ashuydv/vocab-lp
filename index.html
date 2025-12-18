@@ -1,0 +1,1427 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&amp;display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div id="landing-section">
+        <header class="bg-[#0a3b63]">
+            <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+
+                <!-- Logo -->
+                <div class="leading-tight text-white">
+                    <div class="text-xl font-semibold">Vocabulary</div>
+                    <div class="text-xs opacity-80">with Aleena Rais</div>
+                </div>
+
+                <!-- Actions -->
+                <div class="flex items-center gap-6">
+                    <a href="#" class="text-sm font-medium text-white underline underline-offset-4 hover:opacity-80">
+                        Login
+                    </a>
+
+                    <button
+                        class="rounded-sm bg-white px-5 py-1.5 text-sm font-semibold text-[#0a3b63] hover:bg-gray-100">
+                        Register
+                    </button>
+                </div>
+
+            </div>
+        </header>
+
+        <section class="bg-white">
+            <div class="mx-auto max-w-4xl px-6 py-10">
+
+                <div class="flex items-center gap-4">
+                    <div>
+                        <span class="bg-black px-4 mb-2 py-1 text-sm font-medium text-white">
+                            Better
+                        </span>
+                        <h1 class="mt-2 mb-4 text-3xl font-semibold leading-tight md:text-5xl">
+                            Vocabulary
+                        </h1>
+                    </div>
+                    =
+                    <div>
+                        <span class="bg-black px-4 mb-2 py-1 text-sm font-medium text-white">
+                            Fluent
+                        </span>
+                        <h1 class="mt-2 mb-4 text-3xl font-semibold leading-tight md:text-5xl">
+                            English
+                        </h1>
+                    </div>
+                </div>
+
+                <p class="mb-8 text-lg">
+                    <span class="font-bold">Better Vocabulary</span> can improve your
+                    <span class="font-bold">English</span> by
+                    <span class="font-bold">75%</span><sup>¹</sup>
+                </p>
+
+                <!-- Feature Boxes -->
+                <div class="mb-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
+
+                    <div class="flex border border-black">
+                        <div class="w-12 h-12 bg-black"></div>
+                        <div class="px-4 py-3 font-medium">
+                            50+ Lessons
+                        </div>
+                    </div>
+
+                    <div class="flex border border-black">
+                        <div class="w-12 h-12 bg-black"></div>
+                        <div class="px-4 py-3 font-medium">
+                            Lifetime Access
+                        </div>
+                    </div>
+
+                    <div class="flex border border-black">
+                        <div class="w-12 h-12 bg-black"></div>
+                        <div class="px-4 py-3 font-medium">
+                            Certificate of Completion
+                        </div>
+                    </div>
+
+                    <div class="flex border border-black">
+                        <div class="w-12 h-12 bg-black"></div>
+                        <div class="px-4 py-3 font-medium">
+                            Detailed Chapter Notes
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Video Placeholder -->
+                <div class="mb-8 aspect-video w-full border-[6px] border-black bg-white">
+                    <iframe class="h-full w-full" src="https://www.youtube.com/embed/wS1opMiNmk8?si=xpDpzXdUdriumFJK"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+
+                <!-- CTA Buttons -->
+                <div class="space-y-4">
+                    <button onclick="openCheckout()" class="w-full bg-[#0a3b63] py-3 text-lg font-semibold text-white">
+                        Enroll Now!
+                    </button>
+
+                    <button onclick="openDemo(1)"
+                        class="w-full border border-[#0a3b63] py-3 text-lg font-semibold text-[#0a3b63]">
+                        Watch Demo Lectures!
+                    </button>
+                </div>
+                <div class="mx-auto py-8">
+
+                    <!-- Section Title -->
+                    <h2 class="mb-4 text-lg font-semibold">
+                        Your Teacher
+                    </h2>
+
+                    <!-- Card -->
+                    <div class="flex flex-col border border-black">
+
+                        <!-- Left Black Block (Image Placeholder) -->
+                        <div class="overflow-hidden bg-black max-h-[300px] overflow-hidden">
+                            <img src="https://aleenarais.com/assets/img/aleenaimages/01.webp" alt="">
+                        </div>
+
+                        <!-- Right Content -->
+                        <div class="p-6">
+
+                            <!-- Name -->
+                            <h3 class="mb-3 text-3xl font-semibold">
+                                Aleena Rais
+                            </h3>
+
+                            <!-- Stats -->
+                            <div class="mb-4 space-y-2">
+                                <div class="inline-block bg-black px-3 py-1 text-sm font-semibold text-white">
+                                    50K+ Learners
+                                </div>
+                                <br />
+                                <div class="inline-block bg-black px-3 py-1 text-sm font-semibold text-white">
+                                    7M+ Subscribers
+                                </div>
+                            </div>
+
+                            <!-- Description -->
+                            <p class="text-sm leading-relaxed text-black">
+                                Aleena Rais is known for her simple English, which she delivers softly
+                                and elegantly. She is loved and trusted by millions of people.
+                            </p>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-black">
+            <div class="mx-auto max-w-5xl px-6 py-10 text-center text-white">
+
+                <!-- Title -->
+                <h2 class="mb-8 text-lg font-medium">
+                    Trusted by
+                </h2>
+
+                <!-- Brands -->
+                <div class="flex flex-wrap items-center justify-center gap-x-10 gap-y-4 text-lg font-medium">
+                    <span>Groww</span>
+                    <span>IBM</span>
+                    <span>Samsung</span>
+                    <span>Odoo</span>
+                    <span>Caratlane</span>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="bg-white">
+            <div class="mx-auto max-w-4xl px-6 py-12">
+
+                <!-- Outer Box -->
+                <div class="border border-black">
+
+                    <!-- Title Bar -->
+                    <div class="bg-black py-3 text-center">
+                        <h2 class="text-lg font-semibold text-white">
+                            Problems Faced
+                        </h2>
+                    </div>
+
+                    <!-- Content Grid -->
+                    <div class="grid grid-cols-1 gap-2 p-2 grid-cols-2">
+
+                        <!-- Card 1 -->
+                        <div class="flex items-end justify-end bg-black p-4 h-[120px] text-white">
+                            <span class="text-sm font-semibold">
+                                Words not coming to mind.
+                            </span>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="flex items-end justify-end bg-black p-4 h-[120px] text-white">
+                            <span class="text-sm font-semibold">
+                                Not able to express emotions properly.
+                            </span>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="flex items-end justify-end bg-black p-4 h-[120px] text-white">
+                            <span class="text-sm font-semibold">
+                                Missing Vocabulary.
+                            </span>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="flex items-end justify-end bg-black p-4 h-[120px] text-white">
+                            <span class="text-sm font-semibold">
+                                Not able to express emotions properly.
+                            </span>
+                        </div>
+
+                        <!-- Full Width Card -->
+                        <div class="flex items-end justify-start bg-black p-4 h-[120px] text-white col-span-2">
+                            <span class="text-sm font-semibold">
+                                Proper words don’t <br> come to mind while <br> speaking with people.
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="bg-white mb-12">
+            <div class="mx-auto max-w-4xl px-6 py-2 text-center">
+
+                <!-- Title -->
+                <h2 class="mb-6 text-xl font-semibold">
+                    Who is this course for?
+                </h2>
+
+                <!-- Checklist Grid -->
+                <div class="mb-6 grid grid-cols-1 gap-4">
+
+                    <!-- Item -->
+                    <div class="flex border border-black">
+                        <div class="flex w-12 h-12 items-center justify-center bg-black text-white">
+                            ✓
+                        </div>
+                        <div class="flex items-center px-2 py-2 font-medium">
+                            Working Professionals
+                        </div>
+                    </div>
+
+                    <div class="flex border border-black">
+                        <div class="flex w-12 h-12 items-center justify-center bg-black text-white">
+                            ✓
+                        </div>
+                        <div class="flex items-center px-2 py-2 font-medium">
+                            Students
+                        </div>
+                    </div>
+
+                    <div class="flex border border-black">
+                        <div class="flex w-12 h-12 items-center justify-center bg-black text-white">
+                            ✓
+                        </div>
+                        <div class="flex items-center px-2 py-2 font-medium">
+                            Solopreneurs
+                        </div>
+                    </div>
+
+                    <div class="flex border border-black">
+                        <div class="flex w-12 h-12 items-center justify-center bg-black text-white">
+                            ✓
+                        </div>
+                        <div class="flex items-center px-2 py-2 font-medium">
+                            Freelancers
+                        </div>
+                    </div>
+
+                    <div class="flex border border-black">
+                        <div class="flex w-12 h-12 items-center justify-center bg-black text-white">
+                            ✓
+                        </div>
+                        <div class="flex items-center px-2 py-2 font-medium">
+                            Entrepreneurs
+                        </div>
+                    </div>
+
+                    <div class="flex border border-black">
+                        <div class="flex w-12 h-12 items-center justify-center bg-black text-white">
+                            ✓
+                        </div>
+                        <div class="flex items-center px-2 py-2 font-medium">
+                            Managers
+                        </div>
+                    </div>
+
+                    <div class="flex border border-black">
+                        <div class="flex w-12 h-12 items-center justify-center bg-black text-white">
+                            ✓
+                        </div>
+                        <div class="flex items-center px-2 py-2 font-medium">
+                            Team Leaders
+                        </div>
+                    </div>
+
+                    <div class="flex border border-black">
+                        <div class="flex w-12 h-12 items-center justify-center bg-black text-white">
+                            ✓
+                        </div>
+                        <div class="flex items-center px-2 py-2 font-medium">
+                            Sales Executives
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Full Width Item -->
+                <div class="mb-8 border border-black px-6 py-4 font-medium">
+                    Anyone who is interested in improving
+                    <br class="hidden sm:block" />
+                    English Speaking Skills
+                </div>
+
+                <!-- CTA Bar -->
+                <div class="bg-black py-4">
+                    <p class="text-lg font-semibold text-white">
+                        Join Vocabulary with Aleena Rais Now!
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- What is included Section -->
+        <section class="bg-gray-200">
+            <div class="mx-auto max-w-4xl px-6 py-12">
+
+                <!-- Section Title -->
+                <h2 class="mb-6 text-center text-xl font-semibold">
+                    What is included in this course?
+                </h2>
+
+                <!-- Box Wrapper -->
+                <div class="space-y-4">
+
+                    <!-- Item 1 -->
+                    <div class="flex items-center border border-black">
+                        <div class="w-24 h-24 bg-black ml-1"></div>
+                        <div class="px-3 py-4 flex-1">
+                            <h3 class="text-lg font-semibold">50 In-Depth Video Lessons</h3>
+                            <p class="mt-1 text-sm">
+                                Duration: X Hours <br />
+                                Watch at your own pace.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="flex items-center border border-black">
+                        <div class="w-24 h-24 bg-black ml-1"></div>
+                        <div class="px-3 py-4 flex-1">
+                            <h3 class="text-lg font-semibold">Detailed Chapter Notes</h3>
+                            <p class="mt-1 text-sm">
+                                Printable Chapter Notes <br />
+                                Memorable Words
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="flex items-center border border-black">
+                        <div class="w-24 h-24 bg-black ml-1"></div>
+                        <div class="px-3 py-4 flex-1">
+                            <h3 class="text-lg font-semibold">1000+ Practical Words</h3>
+                            <p class="mt-1 text-sm">
+                                No Fancy Words <br />
+                                Practical words that you can use in daily life
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="mt-8 space-y-4">
+                    <button class="w-full bg-black py-3 text-lg font-semibold text-white">
+                        Reserve your seat now!!!
+                    </button>
+
+                    <button class="w-full border border-black py-3 text-lg font-semibold">
+                        Watch Demo Lectures
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- What will you learn Section -->
+        <section class="bg-white">
+            <div class="mx-auto max-w-4xl px-6 py-12">
+
+                <!-- Section Title -->
+                <h2 class="mb-6 text-center text-xl font-semibold">
+                    What will you learn in the course?
+                </h2>
+
+                <!-- List Wrapper -->
+                <div class="space-y-4">
+
+                    <!-- Item -->
+                    <div class="border border-black">
+                        <div class="bg-black px-4 py-2 text-sm font-semibold text-white">
+                            New words and their meanings
+                        </div>
+                        <div class="px-4 py-3 text-sm">
+                            This is the biggest goal. You will learn lots of useful words for daily
+                            life, school, work, feelings, travel, and more.
+                        </div>
+                    </div>
+
+                    <div class="border border-black">
+                        <div class="bg-black px-4 py-2 text-sm font-semibold text-white">
+                            How to use words correctly in sentences
+                        </div>
+                        <div class="px-4 py-3 text-sm">
+                            Knowing a word is not enough, you must know how to use it.
+                            You will learn to fit words into real sentences easily.
+                        </div>
+                    </div>
+
+                    <div class="border border-black">
+                        <div class="bg-black px-4 py-2 text-sm font-semibold text-white">
+                            Idioms, phrasal verbs & expressions
+                        </div>
+                        <div class="px-4 py-3 text-sm">
+                            These make your English sound natural and smart, just like native speakers.
+                        </div>
+                    </div>
+
+                    <div class="border border-black">
+                        <div class="bg-black px-4 py-2 text-sm font-semibold text-white">
+                            Opposites, similar words & word families
+                        </div>
+                        <div class="px-4 py-3 text-sm">
+                            These help you remember words faster and grow your vocabulary quickly.
+                        </div>
+                    </div>
+
+                    <div class="border border-black">
+                        <div class="bg-black px-4 py-2 text-sm font-semibold text-white">
+                            Describe people, feelings, food, weather & more
+                        </div>
+                        <div class="px-4 py-3 text-sm">
+                            You will become confident in talking about anything you see or feel.
+                        </div>
+                    </div>
+
+                    <div class="border border-black">
+                        <div class="bg-black px-4 py-2 text-sm font-semibold text-white">
+                            Vocabulary for office, college, travel & real life
+                        </div>
+                        <div class="px-4 py-3 text-sm">
+                            These words help you in studies, job interviews, meetings,
+                            travelling and everyday conversations.
+                        </div>
+                    </div>
+
+                    <div class="border border-black">
+                        <div class="bg-black px-4 py-2 text-sm font-semibold text-white">
+                            Words for speaking confidently on stage
+                        </div>
+                        <div class="px-4 py-3 text-sm">
+                            You will learn strong vocabulary to speak in public,
+                            give speeches or debate bravely.
+                        </div>
+                    </div>
+
+                    <div class="border border-black">
+                        <div class="bg-black px-4 py-2 text-sm font-semibold text-white">
+                            Test your learning with quizzes and fun practice
+                        </div>
+                        <div class="px-4 py-3 text-sm">
+                            You will check what you learned so the words stay in your mind
+                            for a long time.
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Student Reviews Section -->
+        <section class="bg-gray-100">
+            <div class="mx-auto max-w-4xl px-6 py-12">
+
+                <!-- Section Title -->
+                <h2 class="mb-6 text-center text-xl font-semibold">
+                    Student Reviews
+                </h2>
+
+                <!-- Reviews Wrapper -->
+                <div class="space-y-4">
+
+                    <!-- Review 1 -->
+                    <div class="flex items-center border border-black bg-gray-200">
+                        <div class="w-32 h-32 bg-black"></div>
+                        <div class="px-3 flex-1 py-4 text-sm">
+                            <p class="mb-3 text-xs">
+                                Aleena Rais is known for her simple English, which she delivers softly
+                                and elegantly. She is loved and trusted by millions of people.
+                            </p>
+                            <p class="font-medium text-xs">- Student 1</p>
+                        </div>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="flex items-center border border-black bg-gray-200">
+                        <div class="w-32 h-32 bg-black"></div>
+                        <div class="px-3 flex-1 py-4 text-sm">
+                            <p class="mb-3 text-xs">
+                                Aleena Rais is known for her simple English, which she delivers softly
+                                and elegantly. She is loved and trusted by millions of people.
+                            </p>
+                            <p class="font-medium text-xs">- Student 2</p>
+                        </div>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="flex items-center border border-black bg-gray-200">
+                        <div class="w-32 h-32 bg-black"></div>
+                        <div class="px-3 flex-1 py-4 text-sm">
+                            <p class="mb-3 text-xs">
+                                Aleena Rais is known for her simple English, which she delivers softly
+                                and elegantly. She is loved and trusted by millions of people.
+                            </p>
+                            <p class="font-medium text-xs">- Student 3</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="mt-8 space-y-4">
+                    <button class="w-full bg-black py-3 text-lg font-semibold text-white">
+                        I want to register now!!!
+                    </button>
+
+                    <button class="w-full border border-black py-3 text-lg font-semibold">
+                        I want to watch demo videos...
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Course Curriculum Section -->
+        <section class="bg-white">
+            <div class="mx-auto max-w-4xl px-6 py-12">
+
+                <h2 class="mb-6 text-center text-xl font-semibold">
+                    Course Curriculum
+                </h2>
+
+                <div class="space-y-3" id="curriculum-accordion">
+
+                    <!-- Module 1 -->
+                    <details class="border border-black">
+                        <summary
+                            class="flex cursor-pointer items-center justify-between px-4 py-3 font-medium list-none">
+                            <div>
+                                <div class="font-semibold">Module 1</div>
+                                <div class="text-sm">Introduction to Vocabulary</div>
+                            </div>
+                            <span>›</span>
+                        </summary>
+                        <div class="px-4 py-3 text-sm border-t border-black">
+                            Basics of vocabulary, why words matter, and how this course works.
+                        </div>
+                    </details>
+
+                    <!-- Module 2 -->
+                    <details class="border border-black">
+                        <summary
+                            class="flex cursor-pointer items-center justify-between px-4 py-3 font-medium list-none">
+                            <div>
+                                <div class="font-semibold">Module 2</div>
+                                <div class="text-sm">Everyday Vocabulary</div>
+                            </div>
+                            <span>›</span>
+                        </summary>
+                        <div class="px-4 py-3 text-sm border-t border-black">
+                            Common words used in daily conversations at home, school, and work.
+                        </div>
+                    </details>
+
+                    <!-- Module 3 -->
+                    <details class="border border-black">
+                        <summary
+                            class="flex cursor-pointer items-center justify-between px-4 py-3 font-medium list-none">
+                            <div>
+                                <div class="font-semibold">Module 3</div>
+                                <div class="text-sm">Describing People and Things</div>
+                            </div>
+                            <span>›</span>
+                        </summary>
+                        <div class="px-4 py-3 text-sm border-t border-black">
+                            Learn words to describe people, objects, personality, and appearance.
+                        </div>
+                    </details>
+
+                    <!-- Module 4 -->
+                    <details class="border border-black">
+                        <summary
+                            class="flex cursor-pointer items-center justify-between px-4 py-3 font-medium list-none">
+                            <div>
+                                <div class="font-semibold">Module 4</div>
+                                <div class="text-sm">Food and Drink</div>
+                            </div>
+                            <span>›</span>
+                        </summary>
+                        <div class="px-4 py-3 text-sm border-t border-black">
+                            Vocabulary related to food, taste, restaurants, and dining situations.
+                        </div>
+                    </details>
+
+                    <!-- Module 5 -->
+                    <details class="border border-black">
+                        <summary
+                            class="flex cursor-pointer items-center justify-between px-4 py-3 font-medium list-none">
+                            <div>
+                                <div class="font-semibold">Module 5</div>
+                                <div class="text-sm">Expanding Vocabulary</div>
+                            </div>
+                            <span>›</span>
+                        </summary>
+                        <div class="px-4 py-3 text-sm border-t border-black">
+                            Learn synonyms, opposites, word families, and smart alternatives.
+                        </div>
+                    </details>
+
+                    <!-- Module 6 -->
+                    <details class="border border-black">
+                        <summary
+                            class="flex cursor-pointer items-center justify-between px-4 py-3 font-medium list-none">
+                            <div>
+                                <div class="font-semibold">Module 6</div>
+                                <div class="text-sm">Descriptive Vocabulary</div>
+                            </div>
+                            <span>⌄</span>
+                        </summary>
+
+                        <!-- Meta -->
+                        <div class="flex border-t border-black text-sm">
+                            <div class="w-1/2 border-r border-black px-4 py-2">
+                                7 Lessons
+                            </div>
+                            <div class="w-1/2 px-4 py-2">
+                                56 Minutes
+                            </div>
+                        </div>
+
+                        <!-- Lessons -->
+                        <div class="px-4 py-3 text-sm space-y-2 border-t border-black">
+                            <p>• What you see, hear, smell, taste, and touch.</p>
+                            <p>• Describe good feelings like happiness, excitement, and love.</p>
+                            <p>• Sad or angry feelings, fear, and other tough emotions.</p>
+                            <p>• Confusing feelings like shame, doubt, tiredness, and not caring.</p>
+                        </div>
+                    </details>
+
+                    <!-- Module 7 -->
+                    <details class="border border-black">
+                        <summary
+                            class="flex cursor-pointer items-center justify-between px-4 py-3 font-medium list-none">
+                            <div>
+                                <div class="font-semibold">Module 7</div>
+                                <div class="text-sm">Idioms and Phrasal Verbs</div>
+                            </div>
+                            <span>›</span>
+                        </summary>
+                        <div class="px-4 py-3 text-sm border-t border-black">
+                            Natural expressions and phrases used by native English speakers.
+                        </div>
+                    </details>
+
+                    <!-- Module 8 -->
+                    <details class="border border-black">
+                        <summary
+                            class="flex cursor-pointer items-center justify-between px-4 py-3 font-medium list-none">
+                            <div>
+                                <div class="font-semibold">Module 8</div>
+                                <div class="text-sm">Travel and Leisure</div>
+                            </div>
+                            <span>›</span>
+                        </summary>
+                        <div class="px-4 py-3 text-sm border-t border-black">
+                            Vocabulary for travel, hotels, airports, vacations, and hobbies.
+                        </div>
+                    </details>
+
+                    <!-- Module 9 -->
+                    <details class="border border-black">
+                        <summary
+                            class="flex cursor-pointer items-center justify-between px-4 py-3 font-medium list-none">
+                            <div>
+                                <div class="font-semibold">Module 9</div>
+                                <div class="text-sm">Professional and Technical Vocabulary</div>
+                            </div>
+                            <span>›</span>
+                        </summary>
+                        <div class="px-4 py-3 text-sm border-t border-black">
+                            Office English, meetings, interviews, emails, and work situations.
+                        </div>
+                    </details>
+
+                    <!-- Module 10 -->
+                    <details class="border border-black">
+                        <summary
+                            class="flex cursor-pointer items-center justify-between px-4 py-3 font-medium list-none">
+                            <div>
+                                <div class="font-semibold">Module 10</div>
+                                <div class="text-sm">Literary and Poetic Vocabulary</div>
+                            </div>
+                            <span>›</span>
+                        </summary>
+                        <div class="px-4 py-3 text-sm border-t border-black">
+                            Beautiful, expressive words used in literature and storytelling.
+                        </div>
+                    </details>
+
+                    <!-- Module 11 -->
+                    <details class="border border-black">
+                        <summary
+                            class="flex cursor-pointer items-center justify-between px-4 py-3 font-medium list-none">
+                            <div>
+                                <div class="font-semibold">Module 11</div>
+                                <div class="text-sm">Persuasion and Public Speaking</div>
+                            </div>
+                            <span>›</span>
+                        </summary>
+                        <div class="px-4 py-3 text-sm border-t border-black">
+                            Strong vocabulary for speeches, debates, and confident speaking.
+                        </div>
+                    </details>
+
+                    <!-- Closing -->
+                    <details class="border border-black">
+                        <summary
+                            class="flex cursor-pointer items-center justify-between px-4 py-3 font-medium list-none">
+                            <div>
+                                <div class="font-semibold">Closing</div>
+                                <div class="text-sm">Suggestions + Tests</div>
+                            </div>
+                            <span>›</span>
+                        </summary>
+                        <div class="px-4 py-3 text-sm border-t border-black">
+                            Final tests, revision tips, and suggestions to continue improving.
+                        </div>
+                    </details>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Meet Your Instructor Section -->
+        <section class="bg-white">
+            <div class="mx-auto max-w-4xl px-6 py-6">
+
+                <!-- Section Title -->
+                <h2 class="mb-6 text-center text-xl font-semibold">
+                    Meet Your Instructor
+                </h2>
+
+                <!-- Outer Border -->
+                <div class="border border-black p-3">
+
+                    <!-- Grid -->
+                    <div class="grid grid-cols-2 gap-3">
+
+                        <!-- Top Left Image -->
+                        <div class="bg-black h-40"></div>
+
+                        <!-- Top Right Image -->
+                        <div class="bg-black h-40"></div>
+
+                        <!-- Description -->
+                        <div class="col-span-1 text-sm leading-relaxed">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam
+                                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                                volutpat. Ut wisi enim ad min.
+                            </p>
+                        </div>
+
+                        <!-- Social Proof Box -->
+                        <div class="bg-black text-white p-4 flex flex-col justify-end text-sm">
+                            <p class="font-medium">
+                                Add Instagram and YouTube subscriber count here for authority.
+                            </p>
+                        </div>
+
+                        <!-- Bottom Left Image -->
+                        <div class="bg-black h-40"></div>
+
+                        <!-- Bottom Right Image -->
+                        <div class="bg-black h-40"></div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Still Wondering Section -->
+        <section class="bg-white">
+            <div class="mx-auto max-w-4xl px-6 py-12 text-center">
+
+                <!-- Title -->
+                <h2 class="mb-2 text-xl font-semibold">
+                    Still Wondering If the Course is for YOU?
+                </h2>
+                <p class="mb-6 text-sm">
+                    Please check all boxes, where your answer is <strong>YES!</strong>
+                </p>
+
+                <!-- Checklist -->
+                <div class="space-y-3 text-left">
+
+                    <div class="flex border border-black">
+                        <div class="w-14 bg-black"></div>
+                        <div class="px-2 flex-1 py-3 text-sm">
+                            You understand English but struggle to <strong>find the right words</strong> while speaking.
+                        </div>
+                    </div>
+
+                    <div class="flex border border-black">
+                        <div class="w-14 bg-black"></div>
+                        <div class="px-2 flex-1 py-3 text-sm">
+                            You want to <strong>speak confidently</strong> at work, college, or in public.
+                        </div>
+                    </div>
+
+                    <div class="flex border border-black">
+                        <div class="w-14 bg-black"></div>
+                        <div class="px-2 flex-1 py-3 text-sm">
+                            You know basic vocabulary but want to sound <strong>more fluent and natural</strong>.
+                        </div>
+                    </div>
+
+                    <div class="flex border border-black">
+                        <div class="w-14 bg-black"></div>
+                        <div class="px-2 flex-1 py-3 text-sm">
+                            You feel nervous during interviews, meetings, etc.
+                        </div>
+                    </div>
+
+                    <div class="flex border border-black">
+                        <div class="w-14 bg-black"></div>
+                        <div class="px-2 flex-1 py-3 text-sm">
+                            You want to improve your English for <strong>career growth, travel, or daily
+                                conversations</strong>.
+                        </div>
+                    </div>
+
+                    <div class="flex border border-black">
+                        <div class="w-14 bg-black"></div>
+                        <div class="px-2 flex-1 py-3 text-sm">
+                            You are serious about building strong vocabulary that <strong>stays with you for
+                                life</strong>.
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Invite Text -->
+                <p class="mt-6 text-sm">
+                    If you checked <strong>ANY</strong> of the boxes above, then you’re invited to join
+                    <strong>Vocabulary by Aleena Rais</strong>.
+                </p>
+
+                <!-- CTA -->
+                <div class="mt-6 space-y-4">
+                    <button class="w-full bg-black py-3 text-lg font-semibold text-white">
+                        Reserve your seat now!!!
+                    </button>
+
+                    <div class="border border-dashed border-black px-4 py-3 text-xs">
+                        <strong>ATTENTION:</strong> Register before midnight of December 7, 2025,
+                        to unlock bonuses. This is a never-heard-before offer.
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Get Certified Section -->
+        <section class="bg-gray-100">
+            <div class="mx-auto max-w-4xl px-6 py-12">
+
+                <!-- Title -->
+                <h2 class="mb-6 text-xl font-semibold">
+                    Get Certified
+                </h2>
+
+                <!-- Checklist -->
+                <div class="space-y-4">
+
+                    <!-- Item 1 -->
+                    <div class="flex items-start gap-4">
+                        <div class="flex h-6 w-6 items-center justify-center bg-black text-white text-sm">
+                            ✓
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-semibold">Official and Verified</h3>
+                            <p class="text-sm">
+                                Receive an instructor-signed certificate with institution logo
+                                to verify your achievements and increase your job prospects.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="flex items-start gap-4">
+                        <div class="flex h-6 w-6 items-center justify-center bg-black text-white text-sm">
+                            ✓
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-semibold">Easily shareable</h3>
+                            <p class="text-sm">
+                                Add the certificate to your CV or resume, or post it directly
+                                on LinkedIn. You can even share it on Instagram and Twitter.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="flex items-start gap-4">
+                        <div class="flex h-6 w-6 items-center justify-center bg-black text-white text-sm">
+                            ✓
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-semibold">Enhances Credibility</h3>
+                            <p class="text-sm">
+                                Use your certificate to enhance your professional credibility
+                                and stand out among your peers.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Certificate Placeholder -->
+                <div class="mt-8 h-48 w-full bg-gray-400"></div>
+
+                <!-- CTA -->
+                <div class="mt-6">
+                    <button class="w-full bg-black py-3 text-lg font-semibold text-white">
+                        Reserve your seat now!!!
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Launch Offer Section -->
+        <section class="bg-white">
+            <div class="mx-auto max-w-4xl px-6 py-12 text-left">
+
+                <!-- Heading -->
+                <h2 class="mb-6 text-lg font-semibold">
+                    Get the offer while it lasts!
+                </h2>
+
+                <!-- Offer Card -->
+                <div class="mx-auto max-w-md border border-black p-6 text-left">
+
+                    <!-- Title -->
+                    <h3 class="text-lg font-semibold">
+                        Vocabulary with Aleena Rais <br />
+                        <span class="font-medium">(Launch Offer)</span>
+                    </h3>
+
+                    <!-- Price -->
+                    <div class="mt-4">
+                        <span class="text-3xl font-bold">Rs 899</span>
+                        <span class="ml-2 text-sm line-through text-gray-600">Rs 5,999</span>
+                    </div>
+
+                    <!-- Offer Points -->
+                    <ul class="mt-4 space-y-2 text-sm">
+                        <li class="flex gap-2">
+                            <span>✓</span>
+                            <span>
+                                Enroll now and get bonuses worth <strong>Rs 18,000</strong> absolutely free.
+                                There was never a better time to grab this course.
+                            </span>
+                        </li>
+                        <li class="flex gap-2">
+                            <span>✓</span>
+                            <span>
+                                Enjoy the discounted price of <strong>Rs 1,899</strong> and save a total of
+                                <strong>Rs 18,000</strong>.
+                            </span>
+                        </li>
+                        <li class="flex gap-2">
+                            <span>✓</span>
+                            <span>
+                                The launch offer expires on midnight of:
+                                <strong>December 7, 2025</strong>.
+                            </span>
+                        </li>
+                    </ul>
+
+                    <!-- Note -->
+                    <p class="mt-3 text-xs text-gray-700">
+                        Note: No exceptions would be made beyond the offer expiry date.
+                        The prices would go up and no free bonuses.
+                    </p>
+
+                    <!-- CTA -->
+                    <button class="mt-5 w-full bg-black py-3 text-lg font-semibold text-white">
+                        Join Now!!!
+                    </button>
+                </div>
+
+                <!-- What you'll get -->
+                <div class="mx-auto mt-10 max-w-md text-left">
+                    <h4 class="mb-4 font-semibold">What you’ll get…</h4>
+
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex gap-2"><span>✓</span> Speak English confidently and fluently</li>
+                        <li class="flex gap-2"><span>✓</span> Master the art of articulation</li>
+                        <li class="flex gap-2"><span>✓</span> Lots of activities and exercises to help you practice</li>
+                        <li class="flex gap-2"><span>✓</span> Learn by doing from Day 1</li>
+                        <li class="flex gap-2"><span>✓</span> Learn how to think in English</li>
+                        <li class="flex gap-2"><span>✓</span> Learn strategies on how to overcome the fear of speaking
+                            in
+                            English</li>
+                    </ul>
+                </div>
+
+                <!-- Bonuses -->
+                <div class="mx-auto mt-8 max-w-md text-left">
+                    <h4 class="mb-4 font-semibold">And bonuses too…</h4>
+
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex gap-2"><span>✓</span> Speak English confidently and fluently</li>
+                        <li class="flex gap-2"><span>✓</span> Master the art of articulation</li>
+                        <li class="flex gap-2"><span>✓</span> Lots of activities and exercises to help you practice</li>
+                        <li class="flex gap-2"><span>✓</span> Learn by doing from Day 1</li>
+                        <li class="flex gap-2"><span>✓</span> Learn how to think in English</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Still Confused Section -->
+        <section class="bg-white">
+            <div class="mx-auto max-w-4xl px-6 py-12 text-left">
+
+                <!-- Title -->
+                <h2 class="mb-2 text-xl text-left font-semibold">
+                    Still Confused?
+                </h2>
+
+                <p class="mb-6 text-sm">
+                    Watch this video to understand what’s in the course.
+                </p>
+
+                <!-- Video Frame -->
+                <div class="mb-6 aspect-video w-full border-[6px] border-black bg-white">
+                    <iframe class="h-full w-full" src="https://www.youtube.com/embed/wS1opMiNmk8"
+                        title="Course Overview Video" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <!-- CTA -->
+                <button class="mb-4 w-full bg-black py-3 text-lg font-semibold text-white">
+                    Okay, I am clear now!
+                </button>
+
+                <!-- Helper Text -->
+                <p class="text-xs">
+                    Watch this video to understand what’s in the course.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- FAQs Section -->
+        <section class="bg-white">
+            <div class="mx-auto max-w-4xl px-6 py-12">
+
+                <!-- Title -->
+                <h2 class="mb-6 text-center text-xl font-semibold">
+                    FAQ’s
+                </h2>
+
+                <!-- FAQ Accordion -->
+                <div class="space-y-3" id="faq-accordion">
+
+                    <!-- FAQ 1 -->
+                    <details class="border border-black">
+                        <summary
+                            class="flex cursor-pointer items-center justify-between px-4 py-3 font-medium list-none">
+                            Will I be getting certificate of completion?
+                            <span>⌄</span>
+                        </summary>
+                        <div class="border-t border-black px-4 py-3 text-sm">
+                            Yes, you will receive an official certificate of completion after
+                            successfully finishing the course.
+                        </div>
+                    </details>
+
+                    <!-- FAQ 2 (Open by default like image) -->
+                    <details open class="border border-black">
+                        <summary
+                            class="flex cursor-pointer items-center justify-between px-4 py-3 font-medium list-none">
+                            What is access duration?
+                            <span>⌄</span>
+                        </summary>
+                        <div class="border-t border-black px-4 py-3 text-sm">
+                            You get lifetime access to the course content.
+                            You can learn at your own pace and revisit the lessons anytime.
+                        </div>
+                    </details>
+
+                    <!-- FAQ 3 -->
+                    <details class="border border-black">
+                        <summary
+                            class="flex cursor-pointer items-center justify-between px-4 py-3 font-medium list-none">
+                            This is another question?
+                            <span>⌄</span>
+                        </summary>
+                        <div class="border-t border-black px-4 py-3 text-sm">
+                            Here will be an answer to this question in simple and clear language.
+                        </div>
+                    </details>
+
+                    <!-- FAQ 4 -->
+                    <details class="border border-black">
+                        <summary
+                            class="flex cursor-pointer items-center justify-between px-4 py-3 font-medium list-none">
+                            Yoo this is one more question?
+                            <span>⌄</span>
+                        </summary>
+                        <div class="border-t border-black px-4 py-3 text-sm">
+                            Yes, this question can also be answered clearly here.
+                        </div>
+                    </details>
+
+                    <!-- FAQ 5 -->
+                    <details class="border border-black">
+                        <summary
+                            class="flex cursor-pointer items-center justify-between px-4 py-3 font-medium list-none">
+                            Yet one more question?
+                            <span>⌄</span>
+                        </summary>
+                        <div class="border-t border-black px-4 py-3 text-sm">
+                            Add a helpful response that removes doubts and builds confidence.
+                        </div>
+                    </details>
+
+                    <!-- FAQ 6 -->
+                    <details class="border border-black">
+                        <summary
+                            class="flex cursor-pointer items-center justify-between px-4 py-3 font-medium list-none">
+                            This is last one I promise?
+                            <span>⌄</span>
+                        </summary>
+                        <div class="border-t border-black px-4 py-3 text-sm">
+                            Yes, and this is the final clarification your users need.
+                        </div>
+                    </details>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Bottom Offer Bar -->
+        <section class="bg-black sticky bottom-0 z-50">
+            <div class="mx-auto max-w-4xl px-6 py-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+
+                <!-- Price -->
+                <div class="text-white text-lg font-semibold">
+                    Vocabulary with Aleena Rais <span class="text-sm font-normal">(Launch offer)</span>
+                    <div class="text-xl font-bold">₹ 999/-</div>
+                </div>
+
+                <!-- Actions -->
+                <div class="flex  gap-3">
+                    <button onclick="openCheckout()" class="flex-1 bg-white px-4 py-2 text-sm font-semibold text-black">
+                        Enroll Now!
+                    </button>
+                    <button onclick="openDemo(1)"
+                        class="flex-1 border border-white px-4 py-2 text-sm font-semibold text-white">
+                        Demo Lectures
+                    </button>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <!-- DEMO LECTURE 1 -->
+    <section id="demo-1" class="hidden">
+        <div class="bg-black text-white px-4 py-3 flex justify-between">
+            <div>
+                <div class="font-semibold">Vocabulary</div>
+                <div class="text-xs opacity-80">with Aleena Rais</div>
+            </div>
+            <div class="flex gap-2 items-center">
+                <div class="text-xs">DEMO <br> LECTURE</div>
+                <div class="text-3xl">1</div>
+            </div>
+        </div>
+
+
+        <div class=" bg-white px-6 py-6 space-y-4">
+            <button onclick="goBack()" class="border px-3 py-1 text-sm rounded-full">
+                ← Go Back
+            </button>
+
+            <div class="flex items-center gap-4">
+                <div class="max-w-max bg-black text-white px-2 py-1 text-sm">
+                    Module 11
+                </div>
+                <div class="max-w-max bg-black text-white px-2 py-1 text-sm">
+                    Lesson 3
+                </div>
+            </div>
+
+            <h2 class="text-3xl font-semibold">Wedding Vocabulary</h2>
+
+            <div class="aspect-video border-[6px] border-black"></div>
+            <div class="space-y-4">
+                <button onclick="openCheckout()" class="w-full bg-black py-3 text-white font-semibold">
+                    Enroll Now!!! (Launch Offer)
+                </button>
+
+                <button onclick="openDemo(2)" class="w-full border py-3 font-semibold">
+                    Watch Demo Video 2/3
+                </button>
+            </div>
+
+            <p class="text-sm leading-relaxed text-black">
+                Aleena Rais is known for her simple English, which she delivers softly
+                and elegantly. She is loved and trusted by millions of people.
+            </p>
+
+            <div class="fixed bottom-0 left-0 w-full h-16 bg-black z-50"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- DEMO LECTURE 2 -->
+    <section id="demo-2" class="hidden">
+        <div class="bg-black text-white px-4 py-3 flex justify-between">
+            <div>
+                <div class="font-semibold">Vocabulary</div>
+                <div class="text-xs opacity-80">with Aleena Rais</div>
+            </div>
+            <div class="text-sm">DEMO LECTURE 2</div>
+        </div>
+
+        <button onclick="goBack()" class="mt-4 border px-3 py-1 text-sm rounded">
+            ← Go Back
+        </button>
+
+        <div class="mt-4 inline-block bg-black text-white px-2 py-1 text-xs">
+            Module 5 · Lesson 4
+        </div>
+
+        <h2 class="mt-2 text-xl font-semibold">
+            Emotions and Feelings (Positive)
+        </h2>
+
+        <div class="mt-4 aspect-video border-[6px] border-black"></div>
+
+        <button onclick="openCheckout()" class="mt-4 w-full bg-black py-3 text-white font-semibold">
+            Enroll Now!!! (Launch Offer)
+        </button>
+
+        <button onclick="openDemo(3)" class="mt-3 w-full border py-3 font-semibold">
+            Watch Demo Video 3/3
+        </button>
+    </section>
+
+
+    <!-- DEMO LECTURE 3 -->
+    <section id="demo-3" class="hidden">
+        <div class="bg-black text-white px-4 py-3 text-center">
+            Vocabulary with Aleena Rais
+        </div>
+
+        <button onclick="goBack()" class="mt-4 border px-3 py-1 text-sm rounded">
+            ← Go Back
+        </button>
+
+        <div class="mt-4 inline-block bg-black text-white px-2 py-1 text-xs">
+            Module 1 · Lesson 2
+        </div>
+
+        <h2 class="mt-2 text-xl font-semibold">
+            Industry-Specific Terms, Professional Jargon, Technical Jargon
+        </h2>
+
+        <div class="mt-4 aspect-video border-[6px] border-black"></div>
+
+        <button onclick="openCheckout()" class="mt-4 w-full bg-black py-3 text-white font-semibold">
+            Enroll Now!!! (Launch Offer)
+        </button>
+
+        <button onclick="openCheckout()" class="mt-3 w-full border py-3 font-semibold">
+            Get Bundle Offer!
+        </button>
+    </section>
+
+    <!-- CHECKOUT -->
+    <!-- CHECKOUT -->
+    <section id="checkout" class="hidden">
+        <button onclick="goBack()" class="border px-3 py-1 text-sm rounded">
+            ← Go Back
+        </button>
+
+        <h2 class="mt-4 text-xl font-semibold">Complete Your Purchase</h2>
+        <p class="text-sm text-gray-600">Get instant access to the course!</p>
+
+        <input class="mt-4 w-full border p-3" placeholder="Enter Your Full Name" />
+        <input class="mt-3 w-full border p-3" placeholder="Enter Email" />
+        <input class="mt-3 w-full border p-3" placeholder="Enter 10 Digit WhatsApp Number" />
+
+        <div class="mt-4 border p-3 flex justify-between text-sm">
+            <span>Vocabulary with Aleena Rais</span>
+            <span>₹999/-</span>
+        </div>
+
+        <button class="mt-6 w-full bg-black py-3 text-white font-semibold">
+            Pay Now
+        </button>
+    </section>
+
+
+    <!-- Accordion Logic -->
+    <script>
+        const accordion = document.getElementById("curriculum-accordion");
+        const items = accordion.querySelectorAll("details");
+
+        items.forEach((item) => {
+            item.addEventListener("toggle", () => {
+                if (item.open) {
+                    items.forEach((other) => {
+                        if (other !== item) {
+                            other.open = false;
+                        }
+                    });
+                }
+            });
+        });
+
+        const sections = [
+            "landing-section",
+            "demo-1",
+            "demo-2",
+            "demo-3",
+            "checkout"
+        ];
+
+        function hideAll() {
+            sections.forEach(id => {
+                const el = document.getElementById(id);
+                if (el) el.classList.add("hidden");
+            });
+        }
+
+        function openDemo(number) {
+            hideAll();
+            document.getElementById(`demo-${number}`).classList.remove("hidden");
+            window.scrollTo(0, 0);
+        }
+
+        function openCheckout() {
+            hideAll();
+            document.getElementById("checkout").classList.remove("hidden");
+            window.scrollTo(0, 0);
+        }
+
+        function goBack() {
+            hideAll();
+            document.getElementById("landing-section").classList.remove("hidden");
+            window.scrollTo(0, 0);
+        }
+    </script>
+
+</body>
+
+</html>

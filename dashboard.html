@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Medical Equipment ERP Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- HEADER -->
+    <header class="bg-white border-b px-6 py-4 flex justify-between items-center">
+        <div>
+            <h1 class="text-xl font-semibold">Dashboard</h1>
+            <p class="text-sm text-gray-500">
+                Organization: MedEquip Solutions Pvt Ltd
+            </p>
+        </div>
+        <div class="text-sm text-gray-600 text-right">
+            <p>GSTIN: 27ABCDE1234F1Z5</p>
+            <p>Role: ADMIN</p>
+        </div>
+    </header>
+
+    <main class="p-6 space-y-6">
+
+        <!-- KPI ROW -->
+        <section class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+
+            <!-- TOTAL REVENUE -->
+            <div class="bg-white p-5 rounded-lg shadow">
+                <p class="text-sm text-gray-500">Total Revenue (Invoices)</p>
+                <h2 class="text-2xl font-bold mt-2">₹4,85,200</h2>
+                <p class="text-xs text-gray-400 mt-1">
+                    invoices.grand_total (Current Month)
+                </p>
+            </div>
+
+            <!-- GST COLLECTED -->
+            <div class="bg-white p-5 rounded-lg shadow">
+                <p class="text-sm text-gray-500">GST Collected</p>
+                <h2 class="text-2xl font-bold mt-2">₹87,360</h2>
+                <p class="text-xs text-gray-400 mt-1">
+                    gst_reports.total_cgst + total_sgst + total_igst
+                </p>
+            </div>
+
+            <!-- ACTIVE RENTALS -->
+            <div class="bg-white p-5 rounded-lg shadow">
+                <p class="text-sm text-gray-500">Active Rentals</p>
+                <h2 class="text-2xl font-bold mt-2">28</h2>
+                <p class="text-xs text-gray-400 mt-1">
+                    rentals.status = ACTIVE
+                </p>
+            </div>
+
+            <!-- OVERDUE PAYMENTS -->
+            <div class="bg-white p-5 rounded-lg shadow">
+                <p class="text-sm text-gray-500">Unpaid / Partial Invoices</p>
+                <h2 class="text-2xl font-bold mt-2 text-red-600">6</h2>
+                <p class="text-xs text-gray-400 mt-1">
+                    invoices.payment_status != PAID
+                </p>
+            </div>
+
+        </section>
+
+        <!-- INVENTORY STATUS -->
+        <section class="bg-white rounded-lg shadow p-6">
+            <h3 class="text-lg font-semibold mb-4">Equipment Inventory Status</h3>
+
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-4 text-center">
+                <div class="bg-gray-50 p-4 rounded">
+                    <p class="text-sm text-gray-500">Available</p>
+                    <p class="text-xl font-bold">42</p>
+                    <p class="text-xs text-gray-400">equipment_units.status</p>
+                </div>
+
+                <div class="bg-gray-50 p-4 rounded">
+                    <p class="text-sm text-gray-500">Rented</p>
+                    <p class="text-xl font-bold">28</p>
+                </div>
+
+                <div class="bg-gray-50 p-4 rounded">
+                    <p class="text-sm text-gray-500">Under Service</p>
+                    <p class="text-xl font-bold">5</p>
+                </div>
+
+                <div class="bg-gray-50 p-4 rounded">
+                    <p class="text-sm text-gray-500">Damaged</p>
+                    <p class="text-xl font-bold text-red-600">2</p>
+                </div>
+
+                <div class="bg-gray-50 p-4 rounded">
+                    <p class="text-sm text-gray-500">Sold</p>
+                    <p class="text-xl font-bold">19</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- RECENT INVOICES -->
+        <section class="bg-white rounded-lg shadow p-6">
+            <h3 class="text-lg font-semibold mb-4">Recent Invoices</h3>
+
+            <div class="overflow-x-auto">
+                <table class="w-full text-sm">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="px-4 py-2 text-left">Invoice No</th>
+                            <th class="px-4 py-2 text-left">Customer</th>
+                            <th class="px-4 py-2 text-left">Type</th>
+                            <th class="px-4 py-2 text-left">GST</th>
+                            <th class="px-4 py-2 text-left">Total</th>
+                            <th class="px-4 py-2 text-left">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y">
+                        <tr>
+                            <td class="px-4 py-2">INV-1023</td>
+                            <td class="px-4 py-2">City Care Hospital</td>
+                            <td class="px-4 py-2">RENTAL</td>
+                            <td class="px-4 py-2">₹4,320</td>
+                            <td class="px-4 py-2">₹24,780</td>
+                            <td class="px-4 py-2 text-green-600">PAID</td>
+                        </tr>
+
+                        <tr>
+                            <td class="px-4 py-2">INV-1022</td>
+                            <td class="px-4 py-2">Shree Clinic</td>
+                            <td class="px-4 py-2">SALE</td>
+                            <td class="px-4 py-2">₹13,650</td>
+                            <td class="px-4 py-2">₹89,500</td>
+                            <td class="px-4 py-2 text-yellow-600">PARTIAL</td>
+                        </tr>
+
+                        <tr>
+                            <td class="px-4 py-2">INV-1021</td>
+                            <td class="px-4 py-2">Home Patient</td>
+                            <td class="px-4 py-2">RENTAL</td>
+                            <td class="px-4 py-2">₹2,140</td>
+                            <td class="px-4 py-2">₹12,390</td>
+                            <td class="px-4 py-2 text-red-600">UNPAID</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- PAYMENTS & TDS -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+            <div class="bg-white p-6 rounded-lg shadow">
+                <h3 class="text-lg font-semibold mb-4">Payments Received</h3>
+                <ul class="space-y-3 text-sm">
+                    <li class="flex justify-between">
+                        <span>UPI</span>
+                        <span>₹1,25,000</span>
+                    </li>
+                    <li class="flex justify-between">
+                        <span>Bank Transfer</span>
+                        <span>₹2,10,000</span>
+                    </li>
+                    <li class="flex justify-between">
+                        <span>Cash</span>
+                        <span>₹48,200</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow">
+                <h3 class="text-lg font-semibold mb-4">TDS Deductions</h3>
+                <p class="text-sm">
+                    Total TDS Recorded: <strong>₹18,500</strong>
+                </p>
+                <p class="text-xs text-gray-400 mt-2">
+                    tds_records.tds_amount
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
