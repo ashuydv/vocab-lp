@@ -136,20 +136,17 @@
         <div
           class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4"
         >
-          <div>
-            <h1 class="text-white font-semibold text-lg leading-tight">
-              Vocabulary
-            </h1>
-            <p class="text-xs text-white/70 -mt-1">with Aleena Rais</p>
+          <div class="w-28">
+            <img src="./assets/logo.svg" alt="Logo">
           </div>
 
           <div class="flex items-center gap-6">
-            <a href="../lms/signin.php" class="text-white underline text-sm">
+            <a href="../lms/signin.php" class="text-white text-sm">
               Login
             </a>
             <a
               href="checkout.php"
-              class="rounded-lg bg-[var(--blue)] px-6 py-2 text-white font-semibold"
+              class="rounded-lg bg-[var(--blue)] px-6 py-2 text-white font-normal"
             >
               Enroll
             </a>
@@ -266,11 +263,11 @@
           </h2>
 
           <!-- Card -->
-          <div class="flex gap-3 rounded-xl bg-[#d8b97a] p-2">
+          <div class="flex gap-3 rounded-lg bg-[#d8b97a] p-2">
             <!-- Image -->
-            <div class="w-28 border flex-shrink-0 rounded-lg overflow-hidden">
+            <div class="w-28 flex-shrink-0 rounded-lg overflow-hidden">
               <img
-                src="https://picsum.photos/200"
+                src="./assets/aleena.webp"
                 alt="Aleena Rais"
                 class="h-full w-full object-cover"
               />
@@ -323,20 +320,20 @@
       <div id="worked-at-trigger"></div>
       <div id="lesson-types-section"></div>
       <section class="bg-[#dbeafe] py-4 font-figtree">
-        <div class="mx-auto max-w-5xl px-6 text-center">
+        <div class="mx-auto max-w-5xl px-6 text-center space-y-6">
           <!-- Title -->
-          <h2 class="mb-4 text-lg font-semibold text-[#1f2a33]">Trusted by</h2>
+          <h2 class="text-lg font-semibold text-[#1f2a33]">Trusted by</h2>
 
           <!-- Logos -->
           <div
-            class="grid grid-cols-3 items-center gap-y-4 gap-x-3 md:grid-cols-5"
+            class="flex items-center justify-center flex-wrap gap-3"
           >
             <!-- IBM -->
             <div class="flex justify-center">
               <img
                 src="./assets/ibm.svg"
                 alt="IBM"
-                class="h-7 opacity-80 grayscale"
+                class="min-w-[100px] h-4"
               />
             </div>
 
@@ -345,7 +342,7 @@
               <img
                 src="./assets/samsung.svg"
                 alt="Samsung"
-                class="h-6 opacity-80 grayscale"
+                class="min-w-[100px] h-3"
               />
             </div>
 
@@ -354,25 +351,25 @@
               <img
                 src="./assets/odoo.svg"
                 alt="Odoo"
-                class="h-7 opacity-80 grayscale"
+                class="min-w-[100px] h-4"
               />
             </div>
 
             <!-- GoDigit -->
-            <div class="flex justify-center">
+            <div class="flex justify-center py-2">
               <img
-                src="./assets/godigit.svg"
-                alt="GoDigit"
-                class="h-7 opacity-80 grayscale"
+                src="./assets/godrej.svg"
+                alt="Godrej"
+                class="min-w-[100px] h-6"
               />
             </div>
 
             <!-- Groww -->
-            <div class="flex justify-center">
+            <div class="flex justify-center py-2">
               <img
                 src="./assets/groww.svg"
                 alt="Groww"
-                class="h-7 opacity-80 grayscale"
+                class="min-w-[100px] h-6"
               />
             </div>
           </div>
@@ -2178,34 +2175,34 @@
 
     <div
       id="sticky-enroll"
-      class="fixed bottom-0 left-0 right-0 z-50 bg-[#1f2a33] font-figtree"
+      class="fixed bottom-0 left-0 right-0 z-50 bg-[#111] font-figtree"
     >
       <div
         class="mx-auto flex max-w-md items-center justify-between gap-3 px-4 py-3"
       >
         <!-- Offer Info -->
-        <div class="text-white">
-          <p class="text-xs opacity-80">
-            Vocabulary with Aleena Rais
-            <span class="opacity-70">(Launch offer)</span>
+        <div class="text-white space-y-2">
+          <p class="text-sm opacity-100 text-white" style="line-height: normal;">
+            Vocabulary with Aleena Rais <br>
+            <span class="opacity-100 text-[10px]">(Launch offer)</span>
           </p>
           <div class="flex items-center gap-2">
-            <span class="text-xl font-bold">₹ 899/-</span>
+            <span class="text-3xl font-semibold">₹ 899/-</span>
             <span class="text-xs line-through opacity-60">₹ 1,299/-</span>
           </div>
         </div>
 
         <!-- Buttons -->
-        <div class="flex flex-col gap-1">
+        <div class="flex flex-col gap-2">
           <a
             href="checkout.php"
-            class="rounded-lg bg-[#3b82f6] px-4 py-2 text-sm font-semibold text-white text-center"
+            class="rounded-lg bg-[#3b82f6] px-4 py-2 text-xs block font-semibold text-white text-center w-full"
           >
             Enroll Now!
           </a>
           <a
             href="demo-1.php"
-            class="rounded-lg bg-white px-4 py-2 text-sm font-semibold text-[#3b82f6] text-center"
+            class="rounded-lg bg-white px-4 py-2 text-xs block font-semibold text-[#3b82f6] text-center w-full"
           >
             Demo Lectures
           </a>
@@ -2213,7 +2210,7 @@
       </div>
     </div>
 
-    <div class="pb-32"></div>
+    <div class="pb-28"></div>
 
     <script>
       document
